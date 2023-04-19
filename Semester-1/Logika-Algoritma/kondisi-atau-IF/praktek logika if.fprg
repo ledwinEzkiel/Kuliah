@@ -1,0 +1,65 @@
+<?xml version="1.0"?>
+<flowgorithm fileversion="2.11">
+    <attributes>
+        <attribute name="name" value=""/>
+        <attribute name="authors" value="ASUS"/>
+        <attribute name="about" value=""/>
+        <attribute name="saved" value="2023-04-19 09.01.50 PM"/>
+        <attribute name="created" value="QVNVUztERVNLVE9QLUJUNVJDVEc7MjAyMi0xMC0yMzsxMToyMTowOSBBTTsyNjYx"/>
+        <attribute name="edited" value="QVNVUztERVNLVE9QLUJUNVJDVEc7MjAyMi0xMC0yMzsxMTo0MjoyNSBBTTsxOzI3NzA="/>
+        <attribute name="edited" value="QVNVUztMQVBUT1AtVkpBUVNTUUI7MjAyMy0wNC0xOTswOS4wMS41MCBQTTs3MDsyODYy"/>
+    </attributes>
+    <function name="Main" type="None" variable="">
+        <parameters/>
+        <body>
+            <comment text="prdkt untuk predikat, lls untuk penentuan kelulusan"/>
+            <declare name="nama, prdkt, lls" type="String" array="False" size=""/>
+            <declare name="nim, nilai" type="Real" array="False" size=""/>
+            <output expression="&quot;Nama&quot;" newline="True"/>
+            <input variable="nama"/>
+            <output expression="&quot;Nim?&quot;" newline="True"/>
+            <input variable="nim"/>
+            <output expression="&quot;Nilai?&quot;" newline="True"/>
+            <input variable="nilai"/>
+            <comment text="eksekusi untuk penentuan predikat"/>
+            <if expression="nilai&gt;=90">
+                <then>
+                    <assign variable="prdkt" expression="&quot;A&quot;"/>
+                </then>
+                <else>
+                    <if expression="nilai&gt;=80 and nilai&lt;90">
+                        <then>
+                            <assign variable="prdkt" expression="&quot;B&quot;"/>
+                        </then>
+                        <else>
+                            <if expression="nilai&gt;=70 and nilai&lt;80">
+                                <then>
+                                    <assign variable="prdkt" expression="&quot;C&quot;"/>
+                                </then>
+                                <else>
+                                    <assign variable="prdkt" expression="&quot;D&quot;"/>
+                                </else>
+                            </if>
+                        </else>
+                    </if>
+                </else>
+            </if>
+            <comment text="eksekusi penentuan kelulusan"/>
+            <if expression="nilai&gt;=70">
+                <then>
+                    <assign variable="lls" expression="&quot;DINYATAKAN LULUS&quot;"/>
+                </then>
+                <else>
+                    <assign variable="lls" expression="&quot;DINYATAKAN TIDAK LULUS&quot;"/>
+                </else>
+            </if>
+            <output expression="&quot;=====================================&quot;" newline="True"/>
+            <output expression="&quot;Siswa Atas Nama: &quot;&amp;nama" newline="True"/>
+            <output expression="&quot;NIM: &quot;&amp;nim" newline="True"/>
+            <output expression="&quot;Dengan Nilai: &quot;&amp;nilai" newline="True"/>
+            <output expression="&quot;Mendapatkan Predikat: &quot;&amp;prdkt" newline="True"/>
+            <output expression="lls" newline="True"/>
+            <output expression="&quot;=====================================&quot;" newline="True"/>
+        </body>
+    </function>
+</flowgorithm>
