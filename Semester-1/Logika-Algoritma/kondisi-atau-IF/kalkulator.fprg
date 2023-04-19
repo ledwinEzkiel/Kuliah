@@ -1,0 +1,63 @@
+<?xml version="1.0"?>
+<flowgorithm fileversion="2.11">
+    <attributes>
+        <attribute name="name" value=""/>
+        <attribute name="authors" value="ASUS"/>
+        <attribute name="about" value=""/>
+        <attribute name="saved" value="2022-12-06 04.28.14 PM"/>
+        <attribute name="created" value="QVNVUztMQVBUT1AtVkpBUVNTUUI7MjAyMi0xMS0yOTswMy40OS41NiBQTTsyNzEw"/>
+        <attribute name="edited" value="QVNVUztMQVBUT1AtVkpBUVNTUUI7MjAyMi0xMi0wNjswNC4yOC4xNCBQTTsyMDsyODU1"/>
+    </attributes>
+    <function name="Main" type="None" variable="">
+        <parameters/>
+        <body>
+            <declare name="jo" type="String" array="False" size=""/>
+            <declare name="a, b, c" type="Real" array="False" size=""/>
+            <output expression="&quot;Selamat Datang di Algoritma Kalkulator&quot;" newline="False"/>
+            <output expression="&quot;masukan nilai a&quot;" newline="False"/>
+            <input variable="a"/>
+            <output expression="&quot;masukan operator&quot;" newline="False"/>
+            <input variable="jo"/>
+            <output expression="&quot;masukan nilai b&quot;" newline="False"/>
+            <input variable="b"/>
+            <if expression="jo=&quot;+&quot;">
+                <then>
+                    <assign variable="c" expression="a+b"/>
+                </then>
+                <else>
+                    <if expression="jo=&quot;-&quot;">
+                        <then>
+                            <assign variable="c" expression="a-b"/>
+                        </then>
+                        <else>
+                            <if expression="jo=&quot;*&quot;">
+                                <then>
+                                    <assign variable="c" expression="a*b"/>
+                                </then>
+                                <else>
+                                    <if expression="jo=&quot;/&quot;">
+                                        <then>
+                                            <assign variable="c" expression="a/b"/>
+                                        </then>
+                                        <else>
+                                            <if expression="jo=&quot;e&quot;">
+                                                <then>
+                                                    <assign variable="c" expression="a^b"/>
+                                                </then>
+                                                <else>
+                                                    <output expression="&quot;Operator tidak sesuai!&quot;" newline="False"/>
+                                                </else>
+                                            </if>
+                                        </else>
+                                    </if>
+                                </else>
+                            </if>
+                        </else>
+                    </if>
+                </else>
+            </if>
+            <output expression="&quot;Hasilnya adalah &quot;&amp;c" newline="True"/>
+            <output expression="&quot;============================================&quot;" newline="True"/>
+        </body>
+    </function>
+</flowgorithm>

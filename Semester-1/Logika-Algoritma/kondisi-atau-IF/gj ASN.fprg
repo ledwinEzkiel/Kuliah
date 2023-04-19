@@ -1,0 +1,42 @@
+<?xml version="1.0"?>
+<flowgorithm fileversion="2.11">
+    <attributes>
+        <attribute name="name" value=""/>
+        <attribute name="authors" value="ASUS"/>
+        <attribute name="about" value=""/>
+        <attribute name="saved" value="2022-11-14 01.03.45 PM"/>
+        <attribute name="created" value="QVNVUztMQVBUT1AtVkpBUVNTUUI7MjAyMi0xMS0xMzswNy41Mi41MyBQTTsyNjk4"/>
+        <attribute name="edited" value="QVNVUztMQVBUT1AtVkpBUVNTUUI7MjAyMi0xMS0xNDswMS4wMy40NSBQTTsyNDsyODUx"/>
+    </attributes>
+    <function name="Main" type="None" variable="">
+        <parameters/>
+        <body>
+            <declare name="nm" type="String" array="False" size=""/>
+            <declare name="gp, gb, ja, ta, ti, st" type="Real" array="False" size=""/>
+            <output expression="&quot;masukan nama&quot;" newline="True"/>
+            <input variable="nm"/>
+            <output expression="&quot;masukan gaji pokok&quot;" newline="True"/>
+            <input variable="gp"/>
+            <output expression="&quot;masukan status, jika kawin=1 jika tidak=2&quot;" newline="True"/>
+            <input variable="st"/>
+            <if expression="st=1">
+                <then>
+                    <output expression="&quot;masukan jumlah anak&quot;" newline="True"/>
+                    <input variable="ja"/>
+                    <if expression="ja&gt;=3">
+                        <then>
+                            <assign variable="gb" expression="(ja*0.05*3*gp)+(0.1*gp)+gp"/>
+                        </then>
+                        <else>
+                            <assign variable="gb" expression="(0.05*ja*gp)+(0.1*gp)+gp"/>
+                        </else>
+                    </if>
+                </then>
+                <else>
+                    <assign variable="gb" expression="gp"/>
+                </else>
+            </if>
+            <output expression="gb" newline="True"/>
+        </body>
+    </function>
+</flowgorithm>

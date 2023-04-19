@@ -1,0 +1,27 @@
+<?xml version="1.0"?>
+<flowgorithm fileversion="2.11">
+    <attributes>
+        <attribute name="name" value=""/>
+        <attribute name="authors" value="ASUS"/>
+        <attribute name="about" value=""/>
+        <attribute name="saved" value="2023-02-07 07.22.15 PM"/>
+        <attribute name="created" value="QVNVUztMQVBUT1AtVkpBUVNTUUI7MjAyMy0wMi0wNzswNy4xOC4zMiBQTTsyNzAx"/>
+        <attribute name="edited" value="QVNVUztMQVBUT1AtVkpBUVNTUUI7MjAyMy0wMi0wNzswNy4yMi4xNSBQTTsyOzI4MDY="/>
+    </attributes>
+    <function name="Main" type="None" variable="">
+        <parameters/>
+        <body>
+            <declare name="tb" type="Integer" array="False" size=""/>
+            <input variable="tb"/>
+            <if expression="tb&lt;=500000">
+                <then>
+                    <assign variable="tb" expression="tb-(tb*0.1)"/>
+                </then>
+                <else>
+                    <assign variable="tb" expression="tb-(tb*0.2)"/>
+                </else>
+            </if>
+            <output expression="tb" newline="True"/>
+        </body>
+    </function>
+</flowgorithm>

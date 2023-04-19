@@ -1,0 +1,72 @@
+<?xml version="1.0"?>
+<flowgorithm fileversion="2.11">
+    <attributes>
+        <attribute name="name" value=""/>
+        <attribute name="authors" value="ASUS"/>
+        <attribute name="about" value=""/>
+        <attribute name="saved" value="2022-11-14 03.53.14 PM"/>
+        <attribute name="created" value="QVNVUztMQVBUT1AtVkpBUVNTUUI7MjAyMi0xMS0xNDswMS4wMy40OCBQTTsyNjkz"/>
+        <attribute name="edited" value="QVNVUztMQVBUT1AtVkpBUVNTUUI7MjAyMi0xMS0xNDswMy41My4xNCBQTTsyODsyODU4"/>
+    </attributes>
+    <function name="Main" type="None" variable="">
+        <parameters/>
+        <body>
+            <declare name="ju" type="String" array="False" size=""/>
+            <declare name="ku, lb, pjk" type="Real" array="False" size=""/>
+            <output expression="&quot;masukan jenis usaha&quot;" newline="True"/>
+            <input variable="ju"/>
+            <output expression="&quot;masukan kategori usaha. jika 1=usaha kecil, 2=usaha menengah, 3=usaha besar&quot;" newline="True"/>
+            <input variable="ku"/>
+            <if expression="ku=1">
+                <then>
+                    <output expression="&quot;masukan laba&quot;" newline="True"/>
+                    <input variable="lb"/>
+                    <if expression="lb&gt;10000000">
+                        <then>
+                            <assign variable="pjk" expression="lb*0.025"/>
+                        </then>
+                        <else>
+                            <assign variable="pjk" expression="0"/>
+                        </else>
+                    </if>
+                </then>
+                <else>
+                    <if expression="ku=2">
+                        <then>
+                            <output expression="&quot;masukan laba&quot;" newline="True"/>
+                            <input variable="lb"/>
+                            <if expression="lb&lt;10000000">
+                                <then>
+                                    <assign variable="pjk" expression="(lb*0.01)"/>
+                                </then>
+                                <else>
+                                    <assign variable="pjk" expression="lb*0.035"/>
+                                </else>
+                            </if>
+                        </then>
+                        <else>
+                            <output expression="&quot;masukan laba&quot;" newline="True"/>
+                            <input variable="lb"/>
+                            <if expression="lb&gt;0 and lb&lt;10000001">
+                                <then>
+                                    <assign variable="pjk" expression="lb*0.02"/>
+                                </then>
+                                <else>
+                                    <if expression="lb&gt;10000001 and lb&lt;=50000000">
+                                        <then>
+                                            <assign variable="pjk" expression="lb*0.05"/>
+                                        </then>
+                                        <else>
+                                            <assign variable="pjk" expression="lb*0.075"/>
+                                        </else>
+                                    </if>
+                                </else>
+                            </if>
+                        </else>
+                    </if>
+                </else>
+            </if>
+            <output expression="&quot;Pajaknya adalah Rp. &quot;&amp;pjk" newline="True"/>
+        </body>
+    </function>
+</flowgorithm>
