@@ -1,0 +1,27 @@
+<?xml version="1.0"?>
+<flowgorithm fileversion="2.11">
+    <attributes>
+        <attribute name="name" value=""/>
+        <attribute name="authors" value="ASUS"/>
+        <attribute name="about" value=""/>
+        <attribute name="saved" value="2022-12-19 11.16.11 AM"/>
+        <attribute name="created" value="QVNVUztMQVBUT1AtVkpBUVNTUUI7MjAyMi0xMi0xOTsxMS4wNy4wMCBBTTsyNjc3"/>
+        <attribute name="edited" value="QVNVUztMQVBUT1AtVkpBUVNTUUI7MjAyMi0xMi0xOTsxMS4xNi4xMSBBTTsxOzI3ODc="/>
+    </attributes>
+    <function name="Main" type="None" variable="">
+        <parameters/>
+        <body>
+            <declare name="a" type="Integer" array="True" size="2*3"/>
+            <declare name="b" type="Integer" array="True" size="2*3"/>
+            <declare name="i, j, n" type="Integer" array="False" size=""/>
+            <assign variable="n" expression="0"/>
+            <for variable="i" start="1" end="2" direction="inc" step="1">
+                <for variable="j" start="1" end="3" direction="inc" step="1">
+                    <output expression="&quot;Baris: a[&quot;&amp;i&amp;&quot;][&quot;&amp;j&amp;&quot;]=&quot;" newline="True"/>
+                    <input variable="[n]"/>
+                </for>
+            </for>
+            <output expression="&quot;&quot;" newline="True"/>
+        </body>
+    </function>
+</flowgorithm>

@@ -1,0 +1,65 @@
+<?xml version="1.0"?>
+<flowgorithm fileversion="2.11">
+    <attributes>
+        <attribute name="name" value=""/>
+        <attribute name="authors" value="ASUS"/>
+        <attribute name="about" value=""/>
+        <attribute name="saved" value="2022-12-12 09.41.35 PM"/>
+        <attribute name="created" value="QVNVUztMQVBUT1AtVkpBUVNTUUI7MjAyMi0xMi0xMjswOS4zNS4yNCBBTTsyNjg0"/>
+        <attribute name="edited" value="QVNVUztMQVBUT1AtVkpBUVNTUUI7MjAyMi0xMi0xMjswOS40MS4zNSBQTTsxMDM7MjkwNQ=="/>
+    </attributes>
+    <function name="Main" type="None" variable="">
+        <parameters/>
+        <body>
+            <declare name="nm" type="String" array="True" size="6"/>
+            <declare name="tb" type="Integer" array="True" size="6"/>
+            <declare name="i, ttb, n" type="Integer" array="False" size=""/>
+            <comment text="ttb total tg bdn"/>
+            <declare name="rt" type="Real" array="False" size=""/>
+            <declare name="jk, P, L" type="String" array="False" size=""/>
+            <output expression="&quot;Banyaknya data? max 5&quot;" newline="True"/>
+            <input variable="n"/>
+            <for variable="i" start="1" end="n" direction="inc" step="1">
+                <output expression="&quot;Nama ke-&quot;&amp;i" newline="True"/>
+                <input variable="nm[i]"/>
+                <output expression="&quot;Masukan Jenis Kelamin&quot;" newline="False"/>
+                <input variable="jk"/>
+            </for>
+            <assign variable="ttb" expression="0"/>
+            <for variable="i" start="1" end="n" direction="inc" step="1">
+                <output expression="&quot;Tinggi Badan &quot; &amp;nm[i]" newline="True"/>
+                <input variable="tb[i]"/>
+                <assign variable="ttb" expression="ttb + tb[i]"/>
+            </for>
+            <output expression="&quot;HASIL AKHIR: &quot;" newline="True"/>
+            <for variable="i" start="1" end="n" direction="inc" step="1">
+                <output expression="&quot;Nama: &quot;&amp;nm[i] &amp;&quot;, Tinggi Badan: &quot; &amp; tb[i]" newline="False"/>
+                <if expression="jk=&quot;L&quot;">
+                    <then>
+                        <if expression="tb[i]&gt;=160">
+                            <then>
+                                <output expression="&quot;, LULUS&quot;" newline="True"/>
+                            </then>
+                            <else>
+                                <output expression="&quot;, TIDAK LULUS&quot;" newline="True"/>
+                            </else>
+                        </if>
+                    </then>
+                    <else>
+                        <if expression="tb[i]&gt;=155">
+                            <then>
+                                <output expression="&quot;, LULUS&quot;" newline="True"/>
+                            </then>
+                            <else>
+                                <output expression="&quot;, TIDAK LULUS&quot;" newline="True"/>
+                            </else>
+                        </if>
+                    </else>
+                </if>
+            </for>
+            <assign variable="rt" expression="ttb / n"/>
+            <output expression="&quot;Total: &quot;&amp;ttb" newline="True"/>
+            <output expression="&quot;Rata-rata adalah: &quot;&amp;rt" newline="True"/>
+        </body>
+    </function>
+</flowgorithm>

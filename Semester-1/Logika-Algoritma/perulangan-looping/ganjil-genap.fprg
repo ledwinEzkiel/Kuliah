@@ -1,0 +1,21 @@
+<?xml version="1.0"?>
+<flowgorithm fileversion="2.11">
+    <attributes>
+        <attribute name="name" value=""/>
+        <attribute name="authors" value="ASUS"/>
+        <attribute name="about" value=""/>
+        <attribute name="saved" value="2022-12-05 10.44.32 AM"/>
+        <attribute name="created" value="QVNVUztMQVBUT1AtVkpBUVNTUUI7MjAyMi0xMi0wNTsxMC4wNC4zMCBBTTsyNjcx"/>
+        <attribute name="edited" value="QVNVUztMQVBUT1AtVkpBUVNTUUI7MjAyMi0xMi0wNTsxMC40NC4zMiBBTTsyOzI3ODY="/>
+    </attributes>
+    <function name="Main" type="None" variable="">
+        <parameters/>
+        <body>
+            <declare name="i, n" type="Integer" array="False" size=""/>
+            <input variable="n"/>
+            <for variable="i" start="2" end="n" direction="inc" step="2">
+                <output expression="i &amp; &quot;,&quot;" newline="False"/>
+            </for>
+        </body>
+    </function>
+</flowgorithm>

@@ -4,21 +4,21 @@
         <attribute name="name" value=""/>
         <attribute name="authors" value="ASUS"/>
         <attribute name="about" value=""/>
-        <attribute name="saved" value="2022-12-04 09.58.09 PM"/>
-        <attribute name="created" value="QVNVUztMQVBUT1AtVkpBUVNTUUI7MjAyMi0xMi0wNDswOS41MC41OSBQTTsyNzA1"/>
-        <attribute name="edited" value="QVNVUztMQVBUT1AtVkpBUVNTUUI7MjAyMi0xMi0wNDswOS41OC4wOSBQTTsyOzI4MTc="/>
+        <attribute name="saved" value="2022-11-21 08.45.57 AM"/>
+        <attribute name="created" value="QVNVUztMQVBUT1AtVkpBUVNTUUI7MjAyMi0xMS0yMTswOC4yOS4xMSBBTTsyNjgx"/>
+        <attribute name="edited" value="QVNVUztMQVBUT1AtVkpBUVNTUUI7MjAyMi0xMS0yMTswOC40NS41NyBBTTszOzI3OTk="/>
     </attributes>
     <function name="Main" type="None" variable="">
         <parameters/>
         <body>
             <declare name="i, n" type="Integer" array="False" size=""/>
-            <output expression="&quot;Nilai n:&quot;" newline="True"/>
+            <output expression="&quot;masukan nilai n: &quot;" newline="True"/>
             <input variable="n"/>
             <assign variable="i" expression="1"/>
-            <do expression="i&lt;=n">
-                <output expression="i &amp; &quot; &quot;" newline="True"/>
+            <while expression="i&lt;=n">
+                <output expression="i &amp; &quot;,&quot;" newline="True"/>
                 <assign variable="i" expression="i+1"/>
-            </do>
+            </while>
         </body>
     </function>
 </flowgorithm>
