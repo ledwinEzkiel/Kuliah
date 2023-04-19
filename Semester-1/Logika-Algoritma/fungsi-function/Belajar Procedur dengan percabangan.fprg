@@ -1,0 +1,103 @@
+<?xml version="1.0"?>
+<flowgorithm fileversion="2.11">
+    <attributes>
+        <attribute name="name" value=""/>
+        <attribute name="authors" value="ASUS"/>
+        <attribute name="about" value=""/>
+        <attribute name="saved" value="2023-01-03 12.41.01 PM"/>
+        <attribute name="created" value="QVNVUztMQVBUT1AtVkpBUVNTUUI7MjAyMy0wMS0wMzsxMi4yMC4zMiBQTTsyNjg1"/>
+        <attribute name="edited" value="QVNVUztMQVBUT1AtVkpBUVNTUUI7MjAyMy0wMS0wMzsxMi40MS4wMSBQTTs5OzI4MDA="/>
+    </attributes>
+    <function name="Main" type="None" variable="">
+        <parameters/>
+        <body>
+            <declare name="m" type="Integer" array="False" size=""/>
+            <declare name="x, y" type="Integer" array="False" size=""/>
+            <output expression="&quot;Masukan Metode&quot;" newline="True"/>
+            <input variable="m"/>
+            <output expression="&quot;Masukan Nilai a&quot;" newline="True"/>
+            <input variable="x"/>
+            <output expression="&quot;masukan Nilai b&quot;" newline="True"/>
+            <input variable="y"/>
+            <if expression="m=1">
+                <then>
+                    <output expression="Tambah(x, y)" newline="True"/>
+                </then>
+                <else>
+                    <if expression="m=2">
+                        <then>
+                            <output expression="Kurang(x, y)" newline="True"/>
+                        </then>
+                        <else>
+                            <if expression="m=3">
+                                <then>
+                                    <output expression="Kali(x, y)" newline="True"/>
+                                </then>
+                                <else>
+                                    <if expression="m=4">
+                                        <then>
+                                            <output expression="Bahagi(x, y)" newline="True"/>
+                                        </then>
+                                        <else>
+                                            <output expression="Pangkat(x, y)" newline="True"/>
+                                        </else>
+                                    </if>
+                                </else>
+                            </if>
+                        </else>
+                    </if>
+                </else>
+            </if>
+        </body>
+    </function>
+    <function name="Bahagi" type="Real" variable="c">
+        <parameters>
+            <parameter name="a" type="Real" array="False"/>
+            <parameter name="b" type="Real" array="False"/>
+        </parameters>
+        <body>
+            <declare name="c" type="Integer" array="False" size=""/>
+            <assign variable="c" expression="a/b"/>
+        </body>
+    </function>
+    <function name="Kali" type="Integer" variable="c">
+        <parameters>
+            <parameter name="a" type="Integer" array="False"/>
+            <parameter name="b" type="Integer" array="False"/>
+        </parameters>
+        <body>
+            <declare name="c" type="Integer" array="False" size=""/>
+            <assign variable="c" expression="a*b"/>
+        </body>
+    </function>
+    <function name="Kurang" type="Integer" variable="c">
+        <parameters>
+            <parameter name="a" type="Integer" array="False"/>
+            <parameter name="b" type="Integer" array="False"/>
+        </parameters>
+        <body>
+            <declare name="c" type="Integer" array="False" size=""/>
+            <assign variable="c" expression="a-b"/>
+        </body>
+    </function>
+    <function name="Pangkat" type="Integer" variable="c">
+        <parameters>
+            <parameter name="a" type="Integer" array="False"/>
+            <parameter name="b" type="Integer" array="False"/>
+        </parameters>
+        <body>
+            <declare name="c" type="Integer" array="False" size=""/>
+            <assign variable="c" expression="a^b"/>
+        </body>
+    </function>
+    <function name="Tambah" type="Integer" variable="c">
+        <parameters>
+            <parameter name="a" type="Integer" array="False"/>
+            <parameter name="b" type="Integer" array="False"/>
+        </parameters>
+        <body>
+            <declare name="c" type="Integer" array="False" size=""/>
+            <assign variable="c" expression="a+b"/>
+        </body>
+    </function>
+</flowgorithm>

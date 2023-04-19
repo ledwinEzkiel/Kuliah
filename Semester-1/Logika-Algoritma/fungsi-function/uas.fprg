@@ -1,0 +1,46 @@
+<?xml version="1.0"?>
+<flowgorithm fileversion="2.11">
+    <attributes>
+        <attribute name="name" value=""/>
+        <attribute name="authors" value="ASUS"/>
+        <attribute name="about" value=""/>
+        <attribute name="saved" value="2023-02-07 07.26.30 PM"/>
+        <attribute name="created" value="QVNVUztMQVBUT1AtVkpBUVNTUUI7MjAyMy0wMi0wNzswNy4yMi4xNiBQTTsyNjk4"/>
+        <attribute name="edited" value="QVNVUztMQVBUT1AtVkpBUVNTUUI7MjAyMy0wMi0wNzswNy4yNi4zMCBQTTsxOzI4MDY="/>
+    </attributes>
+    <function name="Main" type="None" variable="">
+        <parameters/>
+        <body>
+            <declare name="jo" type="Integer" array="False" size=""/>
+            <input variable="jo"/>
+            <if expression="jo=1">
+                <then>
+                    <call expression="penjumlahan"/>
+                </then>
+                <else>
+                    <call expression="pangkat"/>
+                </else>
+            </if>
+        </body>
+    </function>
+    <function name="pangkat" type="None" variable="">
+        <parameters/>
+        <body>
+            <declare name="d, e, f" type="Real" array="False" size=""/>
+            <input variable="d"/>
+            <input variable="e"/>
+            <assign variable="f" expression="d^e"/>
+            <output expression="f" newline="True"/>
+        </body>
+    </function>
+    <function name="penjumlahan" type="None" variable="">
+        <parameters/>
+        <body>
+            <declare name="a, b, c" type="Real" array="False" size=""/>
+            <input variable="a"/>
+            <input variable="b"/>
+            <assign variable="c" expression="a+b"/>
+            <output expression="c" newline="True"/>
+        </body>
+    </function>
+</flowgorithm>

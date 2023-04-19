@@ -1,0 +1,296 @@
+<?xml version="1.0"?>
+<flowgorithm fileversion="2.11">
+    <attributes>
+        <attribute name="name" value=""/>
+        <attribute name="authors" value="ASUS"/>
+        <attribute name="about" value=""/>
+        <attribute name="saved" value="2023-01-19 11.07.13 PM"/>
+        <attribute name="created" value="QVNVUztMQVBUT1AtVkpBUVNTUUI7MjAyMy0wMS0xNzswOS40OC4xMSBBTTsyNjg4"/>
+        <attribute name="edited" value="QVNVUztMQVBUT1AtVkpBUVNTUUI7MjAyMy0wMS0xOTsxMS4wNy4xMyBQTTs3MDsyODU3"/>
+    </attributes>
+    <function name="Main" type="None" variable="">
+        <parameters/>
+        <body>
+            <declare name="jeniskonversi, i, bData" type="Integer" array="False" size=""/>
+            <output expression="&quot;SELAMAT DATANG DI ALGORITMA KONVERSI LEDWIN!&quot;" newline="True"/>
+            <output expression="&quot;Tersedia 6 pilihan konversi yaitu:&quot;" newline="True"/>
+            <output expression="&quot;1. Konversi Data, &quot;&amp;&#13;&#10;&quot;2. Konversi Kecepatan, &quot;&amp;&#13;&#10;&quot;3. Konversi Massa, &quot;&amp;&#13;&#10;&quot;4. Konversi Panjang, &quot;&amp;&#13;&#10;&quot;5. Konversi Suhu, &quot;&amp;&#13;&#10;&quot;6. Konversi Waktu&quot;" newline="True"/>
+            <input variable="jeniskonversi"/>
+            <if expression="jeniskonversi=1">
+                <then>
+                    <call expression="Data"/>
+                </then>
+                <else>
+                    <if expression="jeniskonversi=2">
+                        <then>
+                            <call expression="Kecepatan"/>
+                        </then>
+                        <else>
+                            <if expression="jeniskonversi=3">
+                                <then>
+                                    <call expression="Massa"/>
+                                </then>
+                                <else>
+                                    <if expression="jeniskonversi=4">
+                                        <then>
+                                            <call expression="Panjang"/>
+                                        </then>
+                                        <else>
+                                            <if expression="jeniskonversi=5">
+                                                <then>
+                                                    <call expression="Suhu"/>
+                                                </then>
+                                                <else>
+                                                    <call expression="Waktu"/>
+                                                </else>
+                                            </if>
+                                        </else>
+                                    </if>
+                                </else>
+                            </if>
+                        </else>
+                    </if>
+                </else>
+            </if>
+            <output expression="&quot;CATATAN: Program ini masih dalam tahap pengembangan mohon laporkan jika terjadi bug atau error pada program&quot;" newline="True"/>
+        </body>
+    </function>
+    <function name="Data" type="None" variable="">
+        <parameters/>
+        <body>
+            <declare name="angka" type="Integer" array="False" size=""/>
+            <declare name="inputNilai1, inputNilai2, result" type="Real" array="False" size=""/>
+            <output expression="&quot;1. MB to KB, &quot;&amp;&#13;&#10;&quot;2. GB to KB, &quot;&amp;&#13;&#10;&quot;3. TB to MB &quot;" newline="False"/>
+            <input variable="angka"/>
+            <if expression="angka=1">
+                <then>
+                    <output expression="&quot;Masukan Megabyte&quot;" newline="True"/>
+                    <input variable="inputNilai1"/>
+                    <assign variable="result" expression="inputNilai1*1000"/>
+                    <output expression="result&amp;&quot; Kilobyte&quot;" newline="True"/>
+                </then>
+                <else>
+                    <if expression="angka=2">
+                        <then>
+                            <output expression="&quot;Masukan Gigabyte&quot;" newline="True"/>
+                            <input variable="inputNilai1"/>
+                            <assign variable="result" expression="inputNilai1*10^6"/>
+                            <output expression="result&amp;&quot; Kilobyte&quot;" newline="True"/>
+                        </then>
+                        <else>
+                            <output expression="&quot;Masukan Terabyte&quot;" newline="True"/>
+                            <input variable="inputNilai1"/>
+                            <assign variable="result" expression="inputNilai1*10.48576^-7"/>
+                            <output expression="result&amp;&quot; Megabyte&quot;" newline="True"/>
+                        </else>
+                    </if>
+                </else>
+            </if>
+        </body>
+    </function>
+    <function name="Kecepatan" type="None" variable="">
+        <parameters/>
+        <body>
+            <declare name="angka" type="Integer" array="False" size=""/>
+            <declare name="inputNilai1, inputNilai2, result" type="Real" array="False" size=""/>
+            <output expression="&quot;1. Knot to KM/h, &quot;&amp;&#13;&#10;&quot;2. KM/h to Knot, &quot;&amp;&#13;&#10;&quot;3. M/h to KM/h &quot;" newline="False"/>
+            <input variable="angka"/>
+            <if expression="angka=1">
+                <then>
+                    <output expression="&quot;Masukan Knot&quot;" newline="True"/>
+                    <input variable="inputNilai1"/>
+                    <assign variable="result" expression="inputNilai1*1.852"/>
+                    <output expression="result&amp;&quot; KM/h&quot;" newline="True"/>
+                </then>
+                <else>
+                    <if expression="angka=2">
+                        <then>
+                            <output expression="&quot;Masukan KM/h&quot;" newline="True"/>
+                            <input variable="inputNilai1"/>
+                            <assign variable="result" expression="inputNilai1/1.852"/>
+                            <output expression="result&amp;&quot; Knot&quot;" newline="True"/>
+                        </then>
+                        <else>
+                            <output expression="&quot;Masukan Mph&quot;" newline="True"/>
+                            <input variable="inputNilai1"/>
+                            <assign variable="result" expression="inputNilai1*1.609"/>
+                            <output expression="result&amp;&quot; KM/h&quot;" newline="True"/>
+                        </else>
+                    </if>
+                </else>
+            </if>
+        </body>
+    </function>
+    <function name="Massa" type="None" variable="">
+        <parameters/>
+        <body>
+            <declare name="angka" type="Integer" array="False" size=""/>
+            <declare name="inputNilai1, inputNilai2, result" type="Real" array="False" size=""/>
+            <output expression="&quot;1. kg to gr, &quot;&amp;&#13;&#10;&quot;2. gr to kg, &quot;&amp;&#13;&#10;&quot;3. lb to kg, &quot;&amp;&#13;&#10;&quot;4. kg to lb&quot;" newline="False"/>
+            <input variable="angka"/>
+            <if expression="angka=1">
+                <then>
+                    <output expression="&quot;Masukan Kilogram&quot;" newline="True"/>
+                    <input variable="inputNilai1"/>
+                    <assign variable="result" expression="inputNilai1*1000"/>
+                    <output expression="result&amp;&quot; gr&quot;" newline="True"/>
+                </then>
+                <else>
+                    <if expression="angka=2">
+                        <then>
+                            <output expression="&quot;Masukan Gram&quot;" newline="True"/>
+                            <input variable="inputNilai1"/>
+                            <assign variable="result" expression="inputNilai1/1000"/>
+                            <output expression="result&amp;&quot; kg&quot;" newline="True"/>
+                        </then>
+                        <else>
+                            <if expression="angka=3">
+                                <then>
+                                    <output expression="&quot;Masukan Pound/lb&quot;" newline="True"/>
+                                    <input variable="inputNilai1"/>
+                                    <assign variable="result" expression="inputNilai1/2.205"/>
+                                    <output expression="result&amp;&quot; kg&quot;" newline="True"/>
+                                </then>
+                                <else>
+                                    <output expression="&quot;Masukan Kilogram&quot;" newline="True"/>
+                                    <input variable="inputNilai1"/>
+                                    <assign variable="result" expression="inputNilai1*2.205"/>
+                                    <output expression="result&amp;&quot; lb&quot;" newline="True"/>
+                                </else>
+                            </if>
+                        </else>
+                    </if>
+                </else>
+            </if>
+        </body>
+    </function>
+    <function name="Panjang" type="None" variable="">
+        <parameters/>
+        <body>
+            <declare name="angka" type="Integer" array="False" size=""/>
+            <declare name="inputNilai1, inputNilai2, result" type="Real" array="False" size=""/>
+            <output expression="&quot;1. feet to meter, &quot;&amp;&#13;&#10;&quot;2. meter to feet, &quot;&amp;&#13;&#10;&quot;3. meter to km, &quot;&amp;&#13;&#10;&quot;4. inchi to cm&quot;" newline="True"/>
+            <input variable="angka"/>
+            <if expression="angka=1">
+                <then>
+                    <output expression="&quot;Masukan Feet&quot;" newline="True"/>
+                    <input variable="inputNilai1"/>
+                    <assign variable="result" expression="inputNilai1/3.281"/>
+                    <output expression="result&amp;&quot; m&quot;" newline="True"/>
+                </then>
+                <else>
+                    <if expression="angka=2">
+                        <then>
+                            <output expression="&quot;Masukan Meter&quot;" newline="True"/>
+                            <input variable="inputNilai1"/>
+                            <assign variable="result" expression="inputNilai1*3.281"/>
+                            <output expression="result&amp;&quot; ft&quot;" newline="True"/>
+                        </then>
+                        <else>
+                            <if expression="angka=3">
+                                <then>
+                                    <output expression="&quot;Masukan Meter&quot;" newline="True"/>
+                                    <input variable="inputNilai1"/>
+                                    <assign variable="result" expression="inputNilai1/1000"/>
+                                    <output expression="result&amp;&quot; km&quot;" newline="True"/>
+                                </then>
+                                <else>
+                                    <output expression="&quot;Masukan Inchi&quot;" newline="True"/>
+                                    <input variable="inputNilai1"/>
+                                    <assign variable="result" expression="inputNilai1*2.54"/>
+                                    <output expression="result&amp;&quot; cm&quot;" newline="True"/>
+                                </else>
+                            </if>
+                        </else>
+                    </if>
+                </else>
+            </if>
+        </body>
+    </function>
+    <function name="Suhu" type="None" variable="">
+        <parameters/>
+        <body>
+            <declare name="angka" type="Integer" array="False" size=""/>
+            <declare name="inputNilai1, inputNilai2, result" type="Real" array="False" size=""/>
+            <output expression="&quot;1. celcius to farenheit, &quot;&amp;&#13;&#10;&quot;2. celcius to kelvin, &quot;&amp;&#13;&#10;&quot;3. farenheit to celcius, &quot;&amp;&#13;&#10;&quot;4. farenheit to kelvin&quot;" newline="True"/>
+            <input variable="angka"/>
+            <if expression="angka=1">
+                <then>
+                    <output expression="&quot;Masukan celcius&quot;" newline="True"/>
+                    <input variable="inputNilai1"/>
+                    <assign variable="result" expression="(inputNilai1*9/5)+32"/>
+                    <output expression="result&amp;&quot; F&quot;" newline="True"/>
+                </then>
+                <else>
+                    <if expression="angka=2">
+                        <then>
+                            <output expression="&quot;Masukan celcius&quot;" newline="True"/>
+                            <input variable="inputNilai1"/>
+                            <assign variable="result" expression="inputNilai1+273.15"/>
+                            <output expression="result&amp;&quot; K&quot;" newline="True"/>
+                        </then>
+                        <else>
+                            <if expression="angka=3">
+                                <then>
+                                    <output expression="&quot;Masukan farenheit&quot;" newline="True"/>
+                                    <input variable="inputNilai1"/>
+                                    <assign variable="result" expression="(inputNilai1-32)*5/9"/>
+                                    <output expression="result&amp;&quot; C&quot;" newline="True"/>
+                                </then>
+                                <else>
+                                    <output expression="&quot;Masukan farenheit&quot;" newline="True"/>
+                                    <input variable="inputNilai1"/>
+                                    <assign variable="result" expression="(inputNilai1-32)&#215;5/9+273.15"/>
+                                    <output expression="result&amp;&quot; K&quot;" newline="True"/>
+                                </else>
+                            </if>
+                        </else>
+                    </if>
+                </else>
+            </if>
+        </body>
+    </function>
+    <function name="Waktu" type="None" variable="">
+        <parameters/>
+        <body>
+            <declare name="angka" type="Integer" array="False" size=""/>
+            <declare name="inputNilai1, inputNilai2, result" type="Real" array="False" size=""/>
+            <output expression="&quot;1. jam to detik, &quot;&amp;&#13;&#10;&quot;2. jam to milidetik, &quot;&amp;&#13;&#10;&quot;3. hari ke menit, &quot;&amp;&#13;&#10;&quot;4. minggu ke jam&quot;" newline="True"/>
+            <input variable="angka"/>
+            <if expression="angka=1">
+                <then>
+                    <output expression="&quot;Masukan jam&quot;" newline="True"/>
+                    <input variable="inputNilai1"/>
+                    <assign variable="result" expression="inputNilai1*3600"/>
+                    <output expression="result&amp;&quot; detik&quot;" newline="True"/>
+                </then>
+                <else>
+                    <if expression="angka=2">
+                        <then>
+                            <output expression="&quot;Masukan jam&quot;" newline="True"/>
+                            <input variable="inputNilai1"/>
+                            <assign variable="result" expression="inputNilai1*3.6^6"/>
+                            <output expression="result&amp;&quot; milidetik&quot;" newline="True"/>
+                        </then>
+                        <else>
+                            <if expression="angka=3">
+                                <then>
+                                    <output expression="&quot;Masukan hari&quot;" newline="True"/>
+                                    <input variable="inputNilai1"/>
+                                    <assign variable="result" expression="inputNilai1*1440"/>
+                                    <output expression="result&amp;&quot; menit&quot;" newline="True"/>
+                                </then>
+                                <else>
+                                    <output expression="&quot;Masukan minggu&quot;" newline="True"/>
+                                    <input variable="inputNilai1"/>
+                                    <assign variable="result" expression="inputNilai1*168"/>
+                                    <output expression="result&amp;&quot; jam&quot;" newline="True"/>
+                                </else>
+                            </if>
+                        </else>
+                    </if>
+                </else>
+            </if>
+        </body>
+    </function>
+</flowgorithm>

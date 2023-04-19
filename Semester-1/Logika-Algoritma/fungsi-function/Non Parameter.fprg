@@ -1,0 +1,42 @@
+<?xml version="1.0"?>
+<flowgorithm fileversion="2.11">
+    <attributes>
+        <attribute name="name" value=""/>
+        <attribute name="authors" value="ASUS"/>
+        <attribute name="about" value=""/>
+        <attribute name="saved" value="2022-12-27 10.45.31 AM"/>
+        <attribute name="created" value="QVNVUztMQVBUT1AtVkpBUVNTUUI7MjAyMi0xMi0yNzsxMC4zMC4wMyBBTTsyNjc0"/>
+        <attribute name="edited" value="QVNVUztMQVBUT1AtVkpBUVNTUUI7MjAyMi0xMi0yNzsxMC40NS4zMSBBTTsxOzI3ODk="/>
+    </attributes>
+    <function name="Main" type="None" variable="">
+        <parameters/>
+        <body>
+            <call expression="Tambah"/>
+            <call expression="Kurang"/>
+        </body>
+    </function>
+    <function name="Kurang" type="None" variable="">
+        <parameters/>
+        <body>
+            <declare name="x, y, z" type="Integer" array="False" size=""/>
+            <output expression="&quot;Nilai x &quot;" newline="True"/>
+            <input variable="x"/>
+            <output expression="&quot;Nilai y&quot;" newline="True"/>
+            <input variable="y"/>
+            <assign variable="z" expression="x-y"/>
+            <output expression="&quot;hasil pengurangan z&quot;&amp;z" newline="True"/>
+        </body>
+    </function>
+    <function name="Tambah" type="None" variable="">
+        <parameters/>
+        <body>
+            <declare name="a, b, c" type="Integer" array="False" size=""/>
+            <output expression="&quot;Nilai a&quot;" newline="True"/>
+            <input variable="a"/>
+            <output expression="&quot;Nilai b&quot;" newline="True"/>
+            <input variable="b"/>
+            <assign variable="c" expression="a+b"/>
+            <output expression="&quot;Tambah c &quot;&amp;c" newline="True"/>
+        </body>
+    </function>
+</flowgorithm>

@@ -1,0 +1,30 @@
+<?xml version="1.0"?>
+<flowgorithm fileversion="2.11">
+    <attributes>
+        <attribute name="name" value=""/>
+        <attribute name="authors" value="ASUS"/>
+        <attribute name="about" value=""/>
+        <attribute name="saved" value="2022-12-27 11.09.52 AM"/>
+        <attribute name="created" value="QVNVUztMQVBUT1AtVkpBUVNTUUI7MjAyMi0xMi0yNzsxMC40NS40NyBBTTsyNjg4"/>
+        <attribute name="edited" value="QVNVUztMQVBUT1AtVkpBUVNTUUI7MjAyMi0xMi0yNzsxMS4wOS41MiBBTTsxODsyODQ5"/>
+    </attributes>
+    <function name="Main" type="None" variable="">
+        <parameters/>
+        <body>
+            <declare name="x, y" type="Integer" array="False" size=""/>
+            <input variable="x"/>
+            <input variable="y"/>
+            <output expression="Tambah(x, y)" newline="True"/>
+        </body>
+    </function>
+    <function name="Tambah" type="Integer" variable="c">
+        <parameters>
+            <parameter name="a" type="Integer" array="False"/>
+            <parameter name="b" type="Integer" array="False"/>
+        </parameters>
+        <body>
+            <declare name="c" type="Integer" array="False" size=""/>
+            <assign variable="c" expression="a+b"/>
+        </body>
+    </function>
+</flowgorithm>

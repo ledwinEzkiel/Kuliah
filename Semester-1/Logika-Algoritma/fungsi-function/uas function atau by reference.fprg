@@ -1,0 +1,54 @@
+<?xml version="1.0"?>
+<flowgorithm fileversion="2.11">
+    <attributes>
+        <attribute name="name" value=""/>
+        <attribute name="authors" value="ASUS"/>
+        <attribute name="about" value=""/>
+        <attribute name="saved" value="2023-02-07 07.37.26 PM"/>
+        <attribute name="created" value="QVNVUztMQVBUT1AtVkpBUVNTUUI7MjAyMy0wMi0wNzswNy4yNi4zOCBQTTsyNzA2"/>
+        <attribute name="edited" value="QVNVUztMQVBUT1AtVkpBUVNTUUI7MjAyMy0wMi0wNzswNy4zNy4yNiBQTTszOzI4MTU="/>
+    </attributes>
+    <function name="Main" type="None" variable="">
+        <parameters/>
+        <body>
+            <declare name="jo" type="Integer" array="False" size=""/>
+            <input variable="jo"/>
+            <if expression="jo=1">
+                <then>
+                    <declare name="a, b" type="Integer" array="False" size=""/>
+                    <input variable="a"/>
+                    <input variable="b"/>
+                    <call expression="pengurangan(a, b)"/>
+                </then>
+                <else>
+                    <declare name="a, b" type="Integer" array="False" size=""/>
+                    <input variable="a"/>
+                    <input variable="b"/>
+                    <call expression="bagi(a, b)"/>
+                </else>
+            </if>
+        </body>
+    </function>
+    <function name="bagi" type="None" variable="">
+        <parameters>
+            <parameter name="d" type="Real" array="False"/>
+            <parameter name="e" type="Real" array="False"/>
+        </parameters>
+        <body>
+            <declare name="f" type="Real" array="False" size=""/>
+            <assign variable="f" expression="d/e"/>
+            <output expression="f" newline="True"/>
+        </body>
+    </function>
+    <function name="pengurangan" type="None" variable="c">
+        <parameters>
+            <parameter name="a" type="Real" array="False"/>
+            <parameter name="b" type="Real" array="False"/>
+        </parameters>
+        <body>
+            <declare name="c" type="Real" array="False" size=""/>
+            <assign variable="c" expression="a-b"/>
+            <output expression="c" newline="True"/>
+        </body>
+    </function>
+</flowgorithm>

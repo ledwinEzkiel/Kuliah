@@ -1,0 +1,27 @@
+<?xml version="1.0"?>
+<flowgorithm fileversion="2.11">
+    <attributes>
+        <attribute name="name" value=""/>
+        <attribute name="authors" value="ASUS"/>
+        <attribute name="about" value=""/>
+        <attribute name="saved" value="2023-01-09 11.09.12 AM"/>
+        <attribute name="created" value="QVNVUztMQVBUT1AtVkpBUVNTUUI7MjAyMy0wMS0wOTsxMS4wMS4xMyBBTTsyNjcz"/>
+        <attribute name="edited" value="QVNVUztMQVBUT1AtVkpBUVNTUUI7MjAyMy0wMS0wOTsxMS4wOS4xMiBBTTsyOzI3ODk="/>
+    </attributes>
+    <function name="Main" type="None" variable="">
+        <parameters/>
+        <body>
+            <call expression="luassegitiga"/>
+        </body>
+    </function>
+    <function name="luassegitiga" type="None" variable="">
+        <parameters/>
+        <body>
+            <declare name="a, l, t" type="Real" array="False" size=""/>
+            <input variable="a"/>
+            <input variable="t"/>
+            <assign variable="l" expression="1/2*a*t"/>
+            <output expression="&quot;Luas segitiga adalah &quot;&amp;l" newline="True"/>
+        </body>
+    </function>
+</flowgorithm>
