@@ -20,11 +20,11 @@ print("Hello World") #menggunakan tanda petik dua
 print('Hello World') #menggunakan tanda petik tunggal
 
 ```
-`
+```
 output:
 Hello World
 Hello World
-`
+```
 
 
 ### Case Sensitivity
@@ -127,8 +127,9 @@ biodata = {"nama":"Budi", 'umur':21} #proses inisialisasi variabel biodata
 print(biodata) #proses pencetakan variabel biodata yang berisi tipe data Dictionary
 print(type(biodata)) #fungsi untuk mengecek jenis tipe data. akan tampil <class 'dict'> yang berarti dict adalah tipe data dictionary
 ```
-output
-`
+
+```
+output:
 True
 string dengan menggunakan tanda kutip dua
 ini string menggunakan tanda kutip satu
@@ -137,7 +138,7 @@ ini adalah tanda double quote (")
 ini adalah tanda slash (\)
 Algoritma
 Pemrograman
-AlgoritmaPemrograman
+AlgoritmaPemrograman
 Algoritma	Pemrograman
 Pemrograman
 20
@@ -155,4 +156,4 @@ tipe data heksa desimal 16
 {'nama': 'Budi', 'umur': 20}
 {'nama': 'Budi', 'umur': 21}
 <class 'dict'>
-`
+```
