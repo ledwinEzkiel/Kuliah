@@ -156,4 +156,8 @@ tipe data heksa desimal 16
 {'nama': 'Budi', 'umur': 20}
 {'nama': 'Budi', 'umur': 21}
 <class 'dict'>
+
+a ** b
+a * b
+
 ```
