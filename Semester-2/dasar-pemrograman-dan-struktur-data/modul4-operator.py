@@ -26,16 +26,19 @@ print(f"Pangkat = 15 ** 8 = {rumusPangkat}")
 # 1 luas persegi
 panjang_sisi = 20
 luas_persegi = panjang_sisi * panjang_sisi
+print(f"luas persegi adalah {luas_persegi}")
 
 # 2 luas persegi panjang
 panjang_pp = 50
 lebar_pp = 25.5
 luas_pp = panjang_pp * lebar_pp
+print(f"luas persegi panjang adalah {luas_pp}")
 
 # 3 luas segitiga
 alas_segitiga = 40
 tinggi_segitiga = 60
 luas_segitiga = 0.5*alas_segitiga*tinggi_segitiga
+print(f"luas segitiga adalah {luas_segitiga}")
 
 
 # operator bitwise
