@@ -126,6 +126,10 @@ print({"nama":"Budi", 'umur':20})
 biodata = {"nama":"Budi", 'umur':21} #proses inisialisasi variabel biodata
 print(biodata) #proses pencetakan variabel biodata yang berisi tipe data Dictionary
 print(type(biodata)) #fungsi untuk mengecek jenis tipe data. akan tampil <class 'dict'> yang berarti dict adalah tipe data dictionary
+
+a ** b
+a * b
+
 ```
 
 ```
@@ -157,7 +161,5 @@ tipe data heksa desimal 16
 {'nama': 'Budi', 'umur': 21}
 <class 'dict'>
 
-a ** b
-a * b
 
 ```
