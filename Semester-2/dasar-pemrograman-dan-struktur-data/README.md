@@ -1,10 +1,10 @@
 
-# Dasar Pemrograman & Struktur Data
+# Dasar Pemrograman & Struktur Data (Python)
 
 Semua file ini merupakan bahasa pemrograman Python
 
 
-## Syntax dasar pada Python
+## 1. Syntax dasar pada Python
 ### Pendahuluan
 Algoritma adalah urutan aksi-aksi yang dinyatakan dengan jelas dan tidak rancu untuk memecahkan suatu masalah dalam rentang waktu tertentu. Setiap aksi harus dapat dikerjakan dan mempunyai efek tertentu.
 
@@ -62,7 +62,7 @@ print("Hello World") #output text/string
 ```
 
 
-## Penerapan konsep tipe data
+## 2. Penerapan konsep tipe data
 
 ### Tipe data
 Tipe data adalah suatu media atau memori pada komputer yang digunakan untuk menampung informasi. Python sendiri mempunyai tipe data yang cukup unik bila kita bandingkan dengan bahasa pemrograman yang lain. Berikut adalah tipe data dari bahasa pemrograman Python
