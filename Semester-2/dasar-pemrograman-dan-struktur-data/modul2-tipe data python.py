@@ -33,13 +33,13 @@ print(narkoba)
 print(belajar)
 
 """
-Tipe data Boolean
-simpan dengan nama boolean.py
+Tipe data String
+simpan dengan nama string.py
 """
 
-first_name = "Tri"
-middle_name = "Wanda"
-last_name = "Septian"
+first_name = "Ledwin"
+middle_name = "Ezkiel"
+last_name = "Wotulo"
 
 sapa = f"Halo {first_name} {middle_name} {last_name}"
 print(sapa)
