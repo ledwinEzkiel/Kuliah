@@ -34,7 +34,7 @@ print('This string contain a single quote (\') character')
 
 # Program 2
 narkoba = False
-Belajar = True
+belajar = True
 
 print(narkoba)
 print(belajar)
