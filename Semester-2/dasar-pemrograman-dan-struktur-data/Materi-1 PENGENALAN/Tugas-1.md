@@ -1,7 +1,7 @@
 # Tugas Praktikum 1
 
-nama: Ledwin Ezkiel Wotulo\n
-NIM : 5720122028
+- Nama: Ledwin Ezkiel Wotulo
+- NIM : 5720122028
 
 ## Pengantar
 
