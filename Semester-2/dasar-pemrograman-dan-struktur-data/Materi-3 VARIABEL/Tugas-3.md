@@ -1,4 +1,4 @@
-# Tugas Praktikum 2
+# Tugas Praktikum 3
 
 - Nama: Ledwin Ezkiel Wotulo
 - NIM : 5720122028
@@ -51,4 +51,4 @@ Bagian kedua program menghitung luas dan keliling persegi panjang dan lingkaran 
 
 ## Referensi
 - Modul praktikum 3
-- belajarpython.com -> Veriabel
+- belajarpython.com -> Variabel
