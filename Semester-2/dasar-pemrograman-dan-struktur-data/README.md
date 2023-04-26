@@ -22,7 +22,7 @@ Tipe data adalah suatu media atau memori pada komputer yang digunakan untuk mena
 - Complex
 
 ### 3. Penerapan Konsep Variabel
-Variabel adalah suatu pengenal (identifier) yang digunakan untuk mewakili suatu nilai tertentu di dalam proses program. Berbeda dengan konstanta yang nilainya selalu tetap, nilai dari suatu variable bisa diubah-ubah sesuai kebutuhan.
+Variabel adalah suatu pengenal *(identifier)* yang digunakan untuk mewakili suatu nilai tertentu di dalam proses program. Berbeda dengan konstanta yang nilainya selalu tetap, nilai dari suatu variable bisa diubah-ubah sesuai kebutuhan.
 
 Variabel secara umumnya dapat menyimpan berbagai macam tipe data. di dalam Python, variabel bersifat dinamis, yang artinya python tidak perlu dideklarasikan tipe data tertentu dan variabel python dapat diuaah saat program dijalankan.
 
