@@ -18,7 +18,7 @@ Variabel secara umumnya dapat menyimpan berbagai macam tipe data. di dalam Pytho
 
 ```python
 # Biodata
-deskripsi = "Ini program Python
+deskripsi = "Ini program Python"
 nama = 'Ledwin'
 alamat ='Palu'
 umur = 18
