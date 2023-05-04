@@ -103,3 +103,13 @@ print("Zodiak/astrologi Yunani dari tanggal lahir Anda adalah:", zodiak)
 
 ## Analisis Program
 
+
+Program 1 adalah program untuk menentukan jenis segitiga berdasarkan panjang sisi-sisinya. Program ini menginisialisasi variabel x, y, dan z dengan bilangan bulat. Kemudian, program mengevaluasi apakah segitiga tersebut sama sisi, sama kaki, atau sembarang. Jika x sama dengan y sama dengan z, maka segitiga tersebut sama sisi, jika x sama dengan y tetapi tidak sama dengan z, maka segitiga tersebut sama kaki, dan jika semua sisi tidak sama, maka segitiga tersebut sembarang. Program ini menggunakan struktur percabangan if-elif-else untuk mengevaluasi kondisi dan mencetak hasilnya.
+
+Program 2 adalah program untuk menentukan apakah sebuah tahun adalah tahun kabisat atau tidak. Program ini menginisialisasi variabel tahun dengan bilangan bulat. Kemudian, program mengevaluasi apakah tahun tersebut dapat dibagi habis dengan 4. Jika dapat dibagi habis dengan 4, maka tahun tersebut adalah tahun kabisat, jika tidak, maka tahun tersebut bukan tahun kabisat. Program ini menggunakan struktur percabangan if-else untuk mengevaluasi kondisi dan mencetak hasilnya.
+
+Program 3 adalah program untuk menentukan zodiak Cina berdasarkan tahun lahir seseorang. Program ini menginisialisasi variabel tahun_lahir dengan bilangan bulat. Kemudian, program menggunakan operasi modulo untuk menentukan sisa hasil pembagian tahun_lahir dengan 12. Setiap sisa hasil pembagian mewakili sebuah zodiak Cina. Program ini menggunakan struktur percabangan if-elif-else untuk mengevaluasi kondisi dan mencetak hasilnya.
+
+Program 4 adalah program untuk menentukan zodiak Yunani berdasarkan tanggal dan bulan lahir seseorang. Program ini mengambil input dari pengguna berupa tanggal dan bulan lahir. Kemudian, program menggunakan struktur percabangan if-elif-else untuk mengevaluasi tanggal dan bulan lahir dan menentukan zodiak Yunani yang sesuai. Program ini mencetak zodiak Yunani yang sesuai.
+
+Kesimpulannya, keempat program tersebut menggunakan struktur percabangan if-elif-else dan operasi matematika sederhana untuk mengevaluasi kondisi tertentu dan memberikan hasil yang sesuai berdasarkan input yang diberikan. Semua program tersebut relatif sederhana dan digunakan untuk tujuan yang berbeda-beda.
