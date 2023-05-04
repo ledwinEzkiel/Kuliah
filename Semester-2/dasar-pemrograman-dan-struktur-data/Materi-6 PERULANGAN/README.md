@@ -8,6 +8,8 @@ Di dalam bahasa pemrograman Python pengulangan dibagi menjadi 3 bagian, yaitu :
 - For Loop
 - Nested Loop
 
+## While Loop
+
 Pengulangan `While Loop` di dalam bahasa pemrograman Python dieksesusi statement berkali-kali selama kondisi bernilai benar atau `True`.
 
 Dibawah ini adalah contoh penggunaan pengulangan `While Loop`:
