@@ -5,9 +5,9 @@
 
 ### Soal
 
-1. Nama: Encong
-   Kuliah: STMIK Adhi Guna
-   Prodi: Sistem Informasi
+1. - Nama: Encong
+   - Kuliah: STMIK Adhi Guna
+   - Prodi: Sistem Informasi
 
    Buatlah program dengan output sebagai berikut (*gunakan variabel untuk menginisialisasi*)
    > Nama saya Encong kuliah di STMIK Adhi Guna program studi Sistem Informasi
