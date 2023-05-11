@@ -50,7 +50,7 @@ print("keliling lingkaran adalah", keliling_lingkaran)
 panjang_pp = float(input('Masukan Panjang: '))
 lebar_pp = float(input('Masukan Lebar: '))
 luas_pp = 2 * (panjang_pp + lebar_pp)
-keliling_pp = panjang * lebar
+keliling_pp = panjang_pp * lebar_pp
 
 print("Luas pp adalah", luas_pp)
 print("Keliling pp adalah", keliling_pp)
